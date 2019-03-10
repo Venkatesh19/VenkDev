@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans');
+/* font-family: 'IBM Plex Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Mogra');
+/* font-family: 'Mogra', cursive; */
+
+*{
+  font-family: 'IBM Plex Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.logo h4{
+  font-family: 'Mogra', cursive;
+  color: white;
+  grid-column: span 2;
+  padding: 20px;
+}
+.landingSection{
+  background-color:#055772;
+  height: 90vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-columns: 4fr 6fr;
+  justify-items: center;
+  align-items: center;
+  -webkit-border-bottom-left-radius: 50px;
+  -moz-border-radius-bottomleft: 50px;
+  border-bottom-left-radius: 50px;
+
+}
+.navi{
+  display: grid;
+  grid-template-columns: 2fr 4fr 5fr;
+  position: absolute;
+  width: 100%;
+}
+.tools{
+  grid-column: 3;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.tools li{
+  display: inline-block;
+  padding: 15px 10px;
+  text-decoration: none;
+  text-align: center;
+  float: right;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.tools li:hover{
+  border-bottom: 1px solid white;
+
+}
+.welcomeText{
+  grid-column: 1;
+  color: white;
+  padding-left: 10px;
+}
+
+.welcomeText h2{
+  font-size: 2rem;
+}
+.welcomeText h4{
+  font-size: 1rem;
+  opacity: 0.8
+}
+
+.button{
+  display: inline-block;
+     border: none;
+     padding: 1rem 2rem;
+     margin: 0;
+     text-decoration: none;
+     background: white;
+     color: black;
+     font-family: inherit;
+     font-size: 1rem;
+     line-height: 1;
+     cursor: pointer;
+     text-align: center;
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     border-radius: 45px;
+     font-weight: 900;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease 0s;
+}
+.button:hover {
+  background-color: #E34234;
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.imgSection{
+  grid-column: 2;
+}
+.hero{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.AboutMe{
+  text-align: center;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.AboutTitle{
+  grid-column: 2;
+}
+.imgwText{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  justify-items: center;
+  align-content: center;
+  padding-top: 2rem;
+}
+.imgwText img{
+  transition: all 200ms ease-in-out;
+  width: 100%;
+  span: 3;
+}
+
+.Languages{
+  grid-column: 2;
+  width: 100%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+padding-top: 10px;
+padding-left: 10px;
+padding-bottom: 0px;
+justify-items: center;
+}
+.Languages .icon{
+  height: 4rem;
+  width: 4.5rem;
+}
+h1{
+  font-size: 2rem;
+}
+p{
+  text-align: left;
+  font-size: 1.2rem;
+}
+.Projects{
+  width: 100vw;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+
+@media only screen and (max-width: 700px){
+  .Languages .icon{
+    height: 2rem;
+    width: 2.5rem;
+  }
+  .imgwText img{
+    width: 60%;
+    span: 3;
+  }
+  .tools{
+    grid-column: 2 / 4;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  .tools li{
+    display: inline-block;
+    padding: 15px 10px;
+    text-decoration: none;
+    text-align: center;
+    float: right;
+    cursor: pointer;
+    font-weight: 400;
+  }
+}
+
+.Projects{
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+
+.card{
+  position: relative;
+  width: 80vw;
+  height: 150px;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  align-items: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+ transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+ cursor: pointer;
+  margin-top: 2rem;
+  padding: 10px;
+}
+.projectContainer{
+  padding-bottom: 10rem;
+}
+.card:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.projectMalinText{
+  color: #1B5E20;
+  font-weight: 600;
+}
+.card img{
+  width: 80%;
+}
+
+.DescriptionText {
+  padding: 10px;
+}
+
+.cardLinks{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1;
+}
+
+.B1Text{
+  color: orange;
+  font-weight: 800;
+}
+.BSoc{
+  color: #42a7f4;
+  font-weight: 800;
+}
+
+.titleText > h1, p{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block
+}
+
+.ContactMe{
+  margin-bottom: 5rem;
+}
+
+.ContactMeICons{
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-content: center;
+
+}
+.ContactMeICons img{
+  width: 30%;
+  cursor: pointer;
+  padding: 10px 100px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+ transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.ContactMeICons img:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
